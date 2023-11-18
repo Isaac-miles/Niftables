@@ -15,10 +15,10 @@ const Banner = ({image,title}:Props) => {
 
   return (
     <>
-    <div className="bannerContainer w-full  h-screen flex-shrink-0 mix-blend-soft-light ">
+    {/* <div className="bannerContainer w-full  h-screen flex-shrink-0 mix-blend-soft-light ">
       
-    </div>
-    <div className="">
+    </div> */}
+    <div className="flex  flex-col space-y-2 py-16 md:space-x-4 lg:justify-center items-center lg:pb">
         <div className="absolute top-0 left-0 w-screen h-[95vh] -z-10">
         <Image 
         fill={true} 
@@ -29,14 +29,17 @@ const Banner = ({image,title}:Props) => {
          priority/> 
 
         {/* <div className="relative bottom-32-0 bg-red-700">
-        <h1 className="text-2xl md:text-4xl font-bold lg:text-7xl text-white ">{title}</h1>
-        <p  className="max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">{title}</p>
-         
+       
         </div> */}
         </div> 
         
-       
-      
+        <div className="hidden md:hidden 2xl:inline  relative  w-[56%] top-96 bg-transparent">
+           <h1 className="bannerHeading ">{title}</h1>
+        </div>
+        {/* <div className="hidden md:hidden 2xl:inline  relative  w-[56%] top-96 bg-red-400">
+           <h1 className="bannerHeading ">{title}</h1>
+        </div> */}
+        
     </div>
      
     </>

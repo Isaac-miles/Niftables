@@ -6,6 +6,9 @@
   header{
     @apply fixed top-0 flex items-center h-20 text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
   }
+  body{
+    @apply overflow-hidden
+  }
 }
 
 @layer components{
@@ -15,10 +18,12 @@
 
 
 }
-.bannerContainer {
- height:810px;
-flex-shrink: 0;
-background: linear-gradient(175deg, #AB23FF 4.29%, #3D8BFF 47.39%,#000 75.05%);
-/* background: linear-gradient(175deg, #000 4.29%, #3D8BFF 47.39%, #AB23FF 95.05%); */
-  mix-blend-mode: soft-light;
+.bannerHeading {
+  color: var(--White, #FFF);
+  font-family: Monument Extended;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 74.8px */
+  text-transform: uppercase;
 }
