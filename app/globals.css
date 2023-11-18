@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  header{
+    @apply fixed top-0 flex items-center h-20 text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
+  }
+}
 
+@layer components{
+  .headerLink{
+    @apply hidden 2xl:!inline relative cursor-pointer text-lg font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3] 
+  }
+
+
+}
+.bannerContainer {
+ height:810px;
+flex-shrink: 0;
+background: linear-gradient(175deg, #AB23FF 4.29%, #3D8BFF 47.39%,#000 75.05%);
+/* background: linear-gradient(175deg, #000 4.29%, #3D8BFF 47.39%, #AB23FF 95.05%); */
+  mix-blend-mode: soft-light;
+}

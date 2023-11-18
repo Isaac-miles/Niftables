@@ -2,44 +2,53 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import ListStyle from "./ListStyle"
 
-import { useEffect, useState } from "react"
-
+type ListStyle = {
+  id:number
+  name:string
+  live:boolean
+}[]
 
 
 const Header = () => {
-
-    const logo = new URL(`/public/img/logo.png`, import.meta.url).href
-    // const accImgUrl = new URL(`/public/img/acc-logo.png`, import.meta.url).href
-
-
-  return (
-    <header className="bg-[#141414] text-white" >
-
-      <div className="flex items-center justify-between m-5 md:space-x-10">
-        <Image 
-        src={logo}
-        alt="netflix"
-        width={100}
-        height={100}
-        priority
-        className="cursor-pointer object-contain w-auto h-auto"/>
-
-      <div className="flex items-center space-x-4 text-sm font-light  ">
-            <ul className="hidden space-x-4 md:flex">
-                  <li className="headerLink">Home</li>
-                  <li className="headerLink">Tv Shows</li>
-                  <li className="headerLink">Movie</li>
-                  <li className="headerLink">New & Popular</li>
-                  <li className="headerLink">My List</li>
-              </ul>
-              <button className="w-20 h-7 border px-2 py-1 rounded">connect</button>
-
-         </div>
-      </div>
+    const listStyleFromDataBase:ListStyle = [
+      {id:0,name:'Creon Pass', live:false},
+      {id:1,name:'Token', live:true},
+      {id:2,name:'AI Revenue', live:true},
+      {id:3,name:'AI Launchpad', live:true}
+    ]
 
     
+    const logo = new URL(`/public/img/logo.png`, import.meta.url).href
+  
+
+  return (
+   <header  >
+
+    <div className="flex items-center space-x-2 md:space-x-10 ">
+      <Image 
+      src={logo}
+      alt="netflix"
+      width={100}
+      height={100}
+      priority
+      className="cursor-pointer object-contain w-auto h-auto"/>
+
+      
+    </div>
+
+    <div className="flex items-center space-x-4 text-sm font-light ">
+    
+    <ul className="hidden space-x-28 md:flex lg:mr-24 ">
+          {listStyleFromDataBase.map((style)=>(
+            <ListStyle key={style.id} title={style.name} comingSoon={style.live}/>
+          ))}
+    </ul>
+      <button className="w-20 h-7 border px-3 py-0 rounded ">connect</button>
+    </div>
     </header>
+    
   )
 }
 
