@@ -7,7 +7,7 @@
     @apply fixed top-0 flex items-center h-20 text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
   }
   body{
-    @apply overflow-hidden
+    @apply overflow-x-hidden
   }
 }
 
@@ -16,43 +16,21 @@
     @apply hidden 2xl:!inline relative cursor-pointer text-lg font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3] 
 
   }
-  .bannerHeading1{
-    @apply text-white font-normal uppercase leading-[110%] not-italic text-[68px]
+  .bannerHeading{
+    @apply text-white font-normal uppercase leading-[110%] not-italic 2xl:text-[68px] text-[32px] lg:text-[44px]
   }
-  .bannerHeading2{
-    @apply text-white font-normal uppercase leading-[110%] not-italic text-[44px]
+  .bannerParagraph{
+    @apply text-lg lg:text-[22px] md:text-[22px] 2xl:text-[22px] leading-[130%] font-bold not-italic
   }
-
 
 }
-.bannerParagraph {
-  font-family: Satoshi;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%; /* 28.6px */
+.bannerParagraphExtra {
+  display: inline-block;
   background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-image: linear-gradient(to right, #3d8bff, #ab23ff) 1;
 }
-/* .bannerHeading {
-  color: var(--White, #FFF);
-  font-family: Monument Extended;
-  font-size: 68px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; 
-  text-transform: uppercase;
-} */
-/* .bannerHeading2{
-color: var(--White, #FFF);
-font-family: Monument Extended;
-font-size: 44px; 
-font-style: normal;
-font-weight: 400;
-line-height: 110%; 
-text-transform: uppercase;
-} */
+
 

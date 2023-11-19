@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import Link from "next/link"
+import { FaBars } from "react-icons/fa6";
 import ListStyle from "./ListStyle"
 
 type ListStyle = {
@@ -34,8 +34,7 @@ const Header = () => {
       height={100}
       priority
       className="cursor-pointer object-contain w-auto h-auto"/>
-
-      
+     
     </div>
 
     <div className="flex items-center space-x-4 text-sm font-light ">
@@ -46,6 +45,7 @@ const Header = () => {
           ))}
     </ul>
       <button className="w-20 h-7 border px-3 py-0 rounded ">connect</button>
+      <FaBars className=" 2xl:hidden w-7 h-7 bg-white text-black p-1 rounded" />
     </div>
     </header>
     
