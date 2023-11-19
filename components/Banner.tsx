@@ -27,20 +27,14 @@ const Banner = ({image,title}:Props) => {
  
     <div className="flex  flex-col  py-16 md:space-x-4 lg:justify-center items-start md:items-start 2xl:items-center lg:items-center ">
       <div className="absolute top-0 left-0 w-screen h-[95vh] -z-10">
-        <Image 
+        {/* <Image 
         fill={true} 
         src={bannerImage}
         alt="banner logo" 
         // objectFit="cover" 
         sizes="100%"
-         priority/> 
-            {/* <video
-                src={require("../../public/video.mp4")}
-                autoPlay
-                muted
-                loop
-                className={styles.video}
-            /> */}
+         priority/>  */}
+           
       </div> 
         
       <div className="hidden md:hidden 2xl:inline  relative  w-[1440px] top-96 bg-transparent">

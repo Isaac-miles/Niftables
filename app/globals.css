@@ -32,5 +32,11 @@
   -webkit-text-fill-color: transparent;
   border-image: linear-gradient(to right, #3d8bff, #ab23ff) 1;
 }
-
+.video {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 

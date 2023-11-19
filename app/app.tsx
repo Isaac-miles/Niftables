@@ -15,7 +15,13 @@ function App() {
     {/* <div className='relative h-screen bg-gradient-to-b lg:h-[140vh]'> */}
     <Header/>
 
-
+    <video
+                src={require("../assets/vid/subvideo.mp4")}
+                autoPlay
+                muted
+                loop
+                className="video"
+            />
     <main className='relative pl-4  mix-blend-mode: soft-light flex-shrink: 0; '>
     <Banner title={titleFromDb} image='image urls'/>
     </main  >
