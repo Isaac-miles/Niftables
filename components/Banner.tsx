@@ -1,16 +1,25 @@
 'use client'
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import localFont from 'next/font/local'
 
+const monumentExtendedFont = localFont({src:'../util/fonts/MonumentExtended-Regular.otf'})
+
+type Title = {
+  TitleForMediumScreen:string
+  TitleForLargeScreen:string,
+  paragraphForLargeScreen:string,
+  paragraphForMediumScreen:string
+}
 
 type Props ={
-    image :string
-    title:string
+  image :string
+  title:Title
 }
 
 const Banner = ({image,title}:Props) => {
 
+    // const bannerImage = new URL(`${image}, import.meta.url).href
     const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
 
   return (
@@ -34,11 +43,17 @@ const Banner = ({image,title}:Props) => {
         </div> 
         
         <div className="hidden md:hidden 2xl:inline  relative  w-[56%] top-96 bg-transparent">
-           <h1 className="bannerHeading ">{title}</h1>
+           <h1 className={`${monumentExtendedFont.className} bannerHeading1`}>{title.TitleForLargeScreen}</h1>
+           <span className="bannerParagraph border border-x-0 border-y-2 ">{title.paragraphForLargeScreen}</span>
+        
+
+
         </div>
-        {/* <div className="hidden md:hidden 2xl:inline  relative  w-[56%] top-96 bg-red-400">
-           <h1 className="bannerHeading ">{title}</h1>
-        </div> */}
+
+        <div className=" 2xl:hidden  relative  w-[964px] top-96 bg-transparent">
+           <h1 className="bannerHeading2 ">{title.TitleForMediumScreen}</h1>
+           <span className="bannerParagraph  border border-x-0 border-y-2">{title.paragraphForMediumScreen}</span>
+        </div>
         
     </div>
      
