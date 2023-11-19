@@ -1,5 +1,6 @@
 import Banner from '@/components/Banner'
 import Header from '@/components/Header'
+import CreonPass from '@/components/CreonPass'
 
 function App() {
 
@@ -15,15 +16,10 @@ function App() {
     {/* <div className='relative h-screen bg-gradient-to-b lg:h-[140vh]'> */}
     <Header/>
 
-    <video
-                src={require("../assets/vid/subvideo.mp4")}
-                autoPlay
-                muted
-                loop
-                className="video"
-            />
-    <main className='relative pl-4  mix-blend-mode: soft-light flex-shrink: 0; '>
-    <Banner title={titleFromDb} image='image urls'/>
+    <main className='relative pl-4  mix-blend-mode: soft-light  '>
+      <Banner title={titleFromDb} image='image urls'/>
+      <CreonPass/>
+    
     </main  >
     </div>
 
