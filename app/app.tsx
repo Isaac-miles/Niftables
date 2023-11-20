@@ -12,16 +12,20 @@ function App() {
     paragraphForMediumScreen:"Creon «Create On» confidential AI Tools for granting access through NFTs."
  }
   return (
-    <div className='relative h-screen bg-gradient-to-b lg:h-[140vh]'>
-    {/* <div className='relative h-screen bg-gradient-to-b lg:h-[140vh]'> */}
+    <>
+    <section className='relative bg-gradient-to-b h-screen '>
     <Header/>
 
-    <main className='relative pl-4  mix-blend-mode: soft-light  '>
+    <div className='relative pl-4  mix-blend-mode: soft-light  '>
       <Banner title={titleFromDb} image='image urls'/>
-      <CreonPass/>
-    
-    </main  >
+     
     </div>
+    </section>
+   
+    <section className=''>
+      <CreonPass/>
+    </section>
+    </>
 
    
   )

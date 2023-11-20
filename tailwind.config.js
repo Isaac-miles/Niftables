@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'nifxl': '1920px',
+        'nifxl': '1798.67px',
+        'xlmd': {'max': '1022.67px'},
       },
       backgroundImage: {
         'gradient-to-b':

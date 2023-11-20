@@ -37,12 +37,12 @@ const Banner = ({image,title}:Props) => {
            
       </div> 
         
-      <div className="hidden md:hidden 2xl:inline  relative  w-[1440px] top-96 bg-transparent">
+      <div className="hidden md:hidden 2xl:inline  relative  w-[90%] top-96 bg-transparent">
            <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3`}>{title.TitleForLargeScreen}</h1>
            <span className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2`}>{title.paragraphForLargeScreen}</span>
       </div>
 
-      <div className="2xl:hidden  relative w-[345px] xl:w-[996px] lg:min-w-[964px] md:min-w-[80%] top-72 2xl:top-96 lg:top-96 md:top-96 bg-transparent">
+      <div className="2xl:hidden  relative w-[345px] xl:w-[90%] lg:w-[85%] md:min-w-[80%] top-72 2xl:top-96 lg:top-[55vh] md:top-96 bg-transparent">
            <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3`}>{title.TitleForMediumScreen}</h1>
            <div className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2 `}>{title.paragraphForMediumScreen}</div>
       </div>

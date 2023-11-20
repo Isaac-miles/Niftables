@@ -22,7 +22,12 @@
   .bannerParagraph{
     @apply text-lg lg:text-[22px] md:text-[22px] 2xl:text-[22px] leading-[130%] font-bold not-italic
   }
-
+  .missionStatement{
+    @apply text-white font-normal uppercase leading-[120%] not-italic 2xl:text-[68px] text-[28px] lg:text-[28px]
+  }
+  .accordionHeading{
+    @apply text-white font-bold w-[50%] h-[83px] ml-5 mt-6 capitalize leading-[130%] not-italic 2xl:text-[68px] text-[18px] lg:text-[18px]
+  }
 }
 .bannerParagraphExtra {
   display: inline-block;
@@ -39,4 +44,34 @@
   width: 100%;
   object-fit: cover;
 }
+.creonBtn{
+width: 453px;
+height: 54px;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+flex-shrink: 0;
+border-radius: 6px;
+background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
+}
+.missionStatementSub{
+background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
+}
+.bgimg{
+  background: url('../public/img/CREON.png'), lightgray 50% / cover no-repeat;
+}
+.bgimg::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0,5),
+      transparent 30%,
+      transparent)};
