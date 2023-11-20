@@ -1,7 +1,8 @@
 import Banner from '@/components/Banner'
 import Header from '@/components/Header'
 import CreonPass from '@/components/CreonPass'
-
+import MissionStatement from '@/components/MissionStatement'
+import ProfitThrough from '@/components/ProfitThrough'
 function App() {
 
 
@@ -16,14 +17,22 @@ function App() {
     <section className='relative bg-gradient-to-b h-screen '>
     <Header/>
 
-    <div className='relative pl-4  mix-blend-mode: soft-light  '>
+    <div className='relative pl-4  mix-blend-mode: soft-light'>
       <Banner title={titleFromDb} image='image urls'/>
      
     </div>
     </section>
    
-    <section className=''>
+    <section className='hidden nifxl:inline'>
       <CreonPass/>
+    </section>
+
+    <section className='nifxl:hidden'>
+      <MissionStatement/>
+    </section>
+
+    <section className=''>
+      <ProfitThrough/>
     </section>
     </>
 

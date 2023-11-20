@@ -11,8 +11,11 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'nifxl': '1798.67px',
         'xlmd': {'max': '1022.67px'},
+        'xsm': {'min': '375px', 'max': '540px'},
+        'xxsm': {'min': '540px', 'max': '767px'},
+        // 'nifxl': {'min': '1166.67px', 'max': '1920px'},
+        'nifxl': {'min': '1266.67px', 'max': '1920px'},
       },
       backgroundImage: {
         'gradient-to-b':
