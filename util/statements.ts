@@ -4,11 +4,19 @@ interface Statements{
   creonStatement:string
   creonTitle:string
   missionSubStatement:string
+  missionSubStatementI:string
+  missionSubStatementII:string
+  missionSubStatementIII:string
+  missionSubStatementIv:string
 }
 export const writeUpsFromDb
 : Statements ={
   missionStatement:"our mission is to provide unique, confidential AI-based tools, to which you will gain ",
   missionSubStatement:"lifetime access through NFT tokens and our CREON token.",
+  missionSubStatementI:"Access to confidential AI tools enabling business optimization and development. Only NFT holders will have the ability to use a given tool.",
+  missionSubStatementII:"Prospect to derive financial benefits through the redistributed profit generated from AI tools, but only when the majority of NFT holders decide to release the tool publicly.",
+  missionSubStatementIII:"The possibility of allocating investments into new, exceptional tokenized AI tools through Creon Launchpad.",
+  missionSubStatementIv:"Early access to allocations in inspiring tokenized projects, real businesses based on AI.",
   creonStatement:"The Creon NFT pass unlocks access to AI projects, the Creon launchpad, and a ticket to generate passive income through AI-driven tools",
   creonTitle:"creon pass nft"
 }

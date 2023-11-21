@@ -17,6 +17,7 @@ module.exports = {
         'nifx': {'min': '1403.67px', 'max': '1530px'},
         'nifxl': {'min': '1266.67px', 'max': '1536px'},
         'xxxl': {'min': '1537px', 'max': '1920px'},
+        'sxm': {'min': '539px', 'max': '640px'},
       },
       backgroundImage: {
         'gradient-to-b':

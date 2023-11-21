@@ -17,7 +17,7 @@
 
   }
   .bannerHeading{
-    @apply text-white font-normal uppercase leading-[110%] not-italic 2xl:text-[44px] sm:text-[32px] lg:text-[44px] md:text-[44px] xlmd:text-[44px] xsm:text-[32px] xxsm:text-[32px]
+    @apply text-white font-normal uppercase leading-[110%] not-italic 2xl:text-[44px] sm:text-[32px] lg:!text-[44px] md:text-[44px] xlmd:text-[44px] xsm:!text-[32px] xxsm:text-[32px]
   }
   .bannerParagraph{
     @apply text-[18px] lg:text-[18px] md:text-[18px] 2xl:text-[18px] nifxl:text-[22px]  leading-[130%] font-bold not-italic
@@ -29,10 +29,10 @@
     @apply text-white font-bold w-[50%] h-[83px] ml-5 mt-6 capitalize leading-[130%] not-italic 2xl:text-[68px] text-[18px] lg:text-[18px]
   }
   .creonPass{
-    @apply grid grid-cols-1  nifxl:grid-cols-2 lg:grid-cols-2   w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-0 pb-4 bg-black
+    @apply grid xsm:grid-cols-1 sxm:grid-cols-2 sm:grid-cols-2 md:grid-cols-2  nifxl:grid-cols-2 lg:grid-cols-2   w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-0 pb-4 bg-black 
   }
   .creonBtn{
-    @apply h-[54px] nifxl:w-[453px] xl:!w-[400px] md:w-[300px] lg:w-[320px] 2xl:w-[603px] nifx:w-[700px]  text-white text-[18px] font-normal  not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
+    @apply min-w-[87%] h-[54px]   text-white text-[18px] font-normal rounded not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
 
   }
 }
@@ -51,16 +51,7 @@
   width: 100%;
   object-fit: cover;
 }
-.creonBtn1{
-width: 453px;
-height: 54px;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-flex-shrink: 0;
-border-radius: 6px;
-background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
-}
+
 .missionStatementSub{
 background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
 background-clip: text;
