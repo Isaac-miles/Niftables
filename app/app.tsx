@@ -4,6 +4,7 @@ import CreonPass from '@/components/CreonPass'
 import MissionStatement from '@/components/MissionStatement'
 import ProfitThrough from '@/components/ProfitThrough'
 import ComingSoon from '@/components/CommingSoon'
+import ServicesOffered from '@/components/ServicesOffered'
 function App() {
 
 
@@ -24,21 +25,26 @@ function App() {
     </div>
     </section>
    
-    <section className='hidden nifxl:inline'>
+    <section className=' lg:inline'>
       <CreonPass/>
     </section>
 
-    <section className='nifxl:hidden'>
+    {/* <section className='nifxl:hidden'>
       <MissionStatement/>
-    </section>
-{/* 
-    <section className=''>
+    </section> */}
+
+    {/* <section className=''>
       <ProfitThrough/>
     </section> */}
 
-    <section className=''>
+   {/* <section className=''>
       <ComingSoon/>
-    </section>
+    </section>  */}
+
+    {/* <section className=''>
+      <ServicesOffered/>
+    </section> */}
+ 
     </>
 
    

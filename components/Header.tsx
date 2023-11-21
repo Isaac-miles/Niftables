@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { FaBars } from "react-icons/fa6";
 import ListStyle from "./ui-utils/ListStyle"
+import localFont from 'next/font/local'
+const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 type ListStyle = {
   id:number
@@ -24,7 +26,7 @@ const Header = () => {
   
 
   return (
-   <header className="z-40" >
+   <header className=" z-40" >
 
     <div className="flex items-center space-x-2 md:space-x-10 ">
       <Image 
@@ -37,15 +39,15 @@ const Header = () => {
      
     </div>
 
-    <div className="flex items-center space-x-4 text-sm font-light ">
+    <div className="flex items-center space-x-2 text-sm font-light ">
     
-    <ul className="hidden space-x-28 md:flex lg:mr-24 ">
+    <ul   className={`${satoshi.className} hidden space-x-20 md:flex lg:mr-20  `}>
           {listStyleFromDataBase.map((style)=>(
             <ListStyle key={style.id} title={style.name} comingSoon={style.live}/>
           ))}
     </ul>
       <button className="w-20 h-7 border px-3 py-0 rounded ">connect</button>
-      <FaBars className=" 2xl:hidden w-7 h-7 bg-white text-black p-1 rounded" />
+      <FaBars className=" lg:hidden w-7 h-7 bg-white text-black p-1 rounded" />
     </div>
     </header>
     

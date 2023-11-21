@@ -12,7 +12,7 @@ type CardProps = {
  readonly comingSoon:boolean
 
 }
-function BasicCard({title, summary, imageSource,writeUp,comingSoon}:CardProps) {
+function BasicVerticalCard({title, summary, imageSource,writeUp,comingSoon}:CardProps) {
   return (
           <div 
                className="relative flex-col nifxl:w-[65%] max-w-5xl bg-[#13171d99] mx-1 border-0  rounded-md  xsm:mt-5 xsm:w-full xxsm:w-full xxsm:mt-5 ">
@@ -22,17 +22,7 @@ function BasicCard({title, summary, imageSource,writeUp,comingSoon}:CardProps) {
                 <div className={`${satoshi.className} bannerParagraph bannerParagraphExtra mb-4 !text-[18px] xsm:pl-10 xsm:pr-0 pt-2 lg:pl-0`}>
                 {summary}
                 </div> 
-            {/* <div className='w-full  xsm:w-[100%] xsm:mb-10  xxsm:mx-auto xxsm:w-[80%] '>
-              <Image
-              width={423}
-              height={234}
-              src={`/${imageSource}`}
-              alt={title}
-              className='rounded-sm'
-              fill={true}
-              sizes="100%"
-              priority/> 
-              </div> */}
+       
               <div className="relative h-28 min-w-[180px] sm:min-w-[100px] xxsm:!min-w-[180px]  cursor-pointer transition duration-200 ease-out md:h-36 md:min-w-[260px] md:hover:scale-105 ">
                 <Image 
                 src={`/${imageSource}`}
@@ -49,4 +39,4 @@ function BasicCard({title, summary, imageSource,writeUp,comingSoon}:CardProps) {
   )
 }
 
-export default BasicCard
+export default BasicVerticalCard

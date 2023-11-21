@@ -4,7 +4,7 @@
 
 @layer base{
   header{
-    @apply fixed top-0 flex items-center h-20 text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
+    @apply absolute  flex items-center h-20 bg-transparent text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
   }
   body{
     @apply overflow-x-hidden
@@ -13,7 +13,7 @@
 
 @layer components{
   .headerLink{
-    @apply hidden 2xl:!inline relative cursor-pointer text-lg font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3] 
+    @apply hidden lg:!inline relative cursor-pointer text-sm font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3]
 
   }
   .bannerHeading{
@@ -31,7 +31,10 @@
   .creonPass{
     @apply grid grid-cols-1  nifxl:grid-cols-2 lg:grid-cols-2   w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-0 pb-4 bg-black
   }
+  .creonBtn{
+    @apply h-[54px] nifxl:w-[453px] xl:!w-[400px] md:w-[300px] lg:w-[320px] 2xl:w-[603px] nifx:w-[700px]  text-white text-[18px] font-normal  not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
 
+  }
 }
 .bannerParagraphExtra {
   display: inline-block;
@@ -48,7 +51,7 @@
   width: 100%;
   object-fit: cover;
 }
-.creonBtn{
+.creonBtn1{
 width: 453px;
 height: 54px;
 font-size: 18px;
@@ -78,5 +81,5 @@ background-clip: text;
   background: linear-gradient(0deg,
       rgba(0, 0, 0,5),
       transparent 30%,
-      transparent)};
-      
+      transparent)
+    }
