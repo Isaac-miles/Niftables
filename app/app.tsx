@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import CreonPass from '@/components/CreonPass'
 import MissionStatement from '@/components/MissionStatement'
 import ProfitThrough from '@/components/ProfitThrough'
+import ComingSoon from '@/components/CommingSoon'
 function App() {
 
 
@@ -30,9 +31,13 @@ function App() {
     <section className='nifxl:hidden'>
       <MissionStatement/>
     </section>
-
+{/* 
     <section className=''>
       <ProfitThrough/>
+    </section> */}
+
+    <section className=''>
+      <ComingSoon/>
     </section>
     </>
 

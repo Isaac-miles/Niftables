@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { FaBars } from "react-icons/fa6";
-import ListStyle from "./ListStyle"
+import ListStyle from "./ui-utils/ListStyle"
 
 type ListStyle = {
   id:number
@@ -24,7 +24,7 @@ const Header = () => {
   
 
   return (
-   <header  >
+   <header className="z-40" >
 
     <div className="flex items-center space-x-2 md:space-x-10 ">
       <Image 

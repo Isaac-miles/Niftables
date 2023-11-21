@@ -21,7 +21,7 @@ const Banner = ({image,title}:Props) => {
 
     // const bannerImage = new URL(`${image}, import.meta.url).href
     const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
-
+  console.log(bannerImage)
   return (
     <>
  
