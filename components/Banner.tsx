@@ -25,12 +25,12 @@ const Banner = () => {
            
       </div> 
         
-      <div className="hidden md:hidden 2xl:inline  relative  w-[90%] top-96 bg-transparent">
-           <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3`}>{BannerTitleFromDb.TitleForLargeScreen}</h1>
+      <div className="hidden md:hidden lg:inline  relative  w-[90%] top-96 lg:top-[18rem] xl:top-[19rem] bg-transparent">
+           <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3 `}>{BannerTitleFromDb.TitleForLargeScreen}</h1>
            <span className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2`}>{BannerTitleFromDb.paragraphForLargeScreen}</span>
       </div>
 
-      <div className="2xl:hidden  relative w-[345px] xl:w-[90%] lg:w-[85%] md:min-w-[80%] top-72 2xl:top-96 lg:top-[40vh] md:top-96 xlmd:top-[10rem] xsm:top-[12rem]  bg-transparent">
+      <div className="lg:hidden  relative w-[345px] lg:w-[90%] md:min-w-[80%] top-[10rem]  md:top-96 xlmd:top-[15rem] xsm:top-[12rem]  bg-transparent">
            <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3 `}>{BannerTitleFromDb.TitleForMediumScreen}</h1>
            <div className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2 `}>{BannerTitleFromDb.paragraphForMediumScreen}</div>
       </div>

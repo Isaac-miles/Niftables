@@ -6,6 +6,9 @@ import ProfitThrough from '@/components/ProfitThrough'
 import ComingSoon from '@/components/CommingSoon'
 import ServicesOffered from '@/components/ServicesOffered'
 import Footer from '@/components/Footer'
+import BackgroundBanner from '@/components/BackgroundBanner'
+import LargeScreen from '@/components/DisplayScreenSiizes/LargeScreen'
+import MediumScreen from '@/components/DisplayScreenSiizes/MediumScreen'
 function App() {
 
 
@@ -19,31 +22,24 @@ function App() {
      
     </div>
     </section>
-   
-    <section className=' lg:inline'>
-      <CreonPass/>
+
+      {/* <LargeScreen /> */}
+
+      
+   {/* Medium screen */}
+   <MediumScreen/>
+
+
+    <section className='relative lg:h-[95vh]  '>
+    
+    <div className='relative pl-4  mix-blend-mode: soft-light'>
+    <BackgroundBanner/>
+    </div>
     </section>
 
-    {/* <section className='nifxl:hidden'>
-      <MissionStatement/>
-    </section> */}
-
-    {/* <section className=''>
-      <ProfitThrough/>
-    </section> */}
-
-   {/* <section className=''>
-      <ComingSoon/>
-    </section>  */}
-
-    {/* <section className=''>
-      <ServicesOffered/>
-    </section> */}
-
-    <section className='mb-40'>
+    <section className='xsm:mt-[36rem] xxsm:mt-[32rem] xlmd:mt-[32rem] lg:mt-[10rem] xl:mt-4'>
       <Footer/>
     </section>
- 
     </>
 
    

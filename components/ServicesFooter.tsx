@@ -1,15 +1,15 @@
 import {HorizontalCardInformation} from '@/util/statements'
 import BasicHorizontalCard from './ui-utils/basicHorizontalCard'
 
-function ServicesOffered() {
+function ServicesOfferedFooter() {
  
   return (
 
-    <div className='  w-full content-center  bg-black'>
-      
-       <div className="group w-full px-0 pt-10 pb-12 xsm:overflow-x-scroll xsm:p-0 " >
+    <div className='absolute flex  top-0  w-full content-center  lg:px-0 lg:pl-8  '>
+    
+       <div className="group w-full  pb-1 xsm:overflow-x-scroll xsm:p-0 lg:mx-12" >
 
-          <div className="flex-row space-x-2 sm:space-y-2 w-full xsm:flex" >
+          <div className="flex-row space-x-1 sm:space-y-2 w-full xsm:flex" >
               {HorizontalCardInformation.map((card) => (
             <BasicHorizontalCard
               key={card.id}
@@ -23,7 +23,8 @@ function ServicesOffered() {
           </div> 
         </div> 
     </div>
+
     )
 }
 
-export default ServicesOffered
+export default ServicesOfferedFooter

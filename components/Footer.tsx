@@ -13,9 +13,9 @@ function Footer() {
 
   return (
     // <div className='fixed flex justify-around bg-black/50 w-full h-15 z-20 '>
-    <div className={`${satoshi.className} flex xsm:flex-col sxm:items-center justify-between bg-[#2B2620] w-full -mt-4 lg:px-20`}> 
+    <div className={`${satoshi.className} flex xsm:flex-col sxm:items-center justify-between  bg-black w-full -mt-4 lg:px-20`}> 
 
-      <div  className='flex items-center bg-red-200'>
+      <div  className='flex items-center '>
         <ul className='flex gap-4  text-white'>
           <li>&copy; Creon {year}. All rights reserved</li>
        </ul>

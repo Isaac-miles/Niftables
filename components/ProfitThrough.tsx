@@ -10,9 +10,9 @@ function ProfitThrough() {
   const bgImageSM = new URL(`/public/img/creonlogoSM.png`, import.meta.url).href
  
   return (
-  <div className='grid w-full content-center  px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-8 bg-black'>
+  <div className='grid w-full content-center  px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 py-8 '>
 
-     <div className="group w-full md:-ml-2 bg-black px-10 pb-12 xsm:overflow-x-hidden xsm:p-0 " >
+     <div className="group w-full md:-ml-2 bg-black px-0 pb-12 xsm:overflow-x-hidden xsm:p-0 " >
     
         <div  className="flex flex-col items-end space-y-4 md:space-y-2.5 p-2 mb-6">
         <h1 className={`${monumentExtendedFont.className} bannerHeading self-start`}>Profiting Through</h1>
@@ -22,7 +22,7 @@ function ProfitThrough() {
         <div className="flex nifxl:flex-row  lg:flex-row w-full  xxsm:flex-col xsm:flex-col" >
             <div  className=" w-[80%] mr-3 xsm:px-1  xsm:w-full xxsm:w-full ">
 
-            <div className='hidden nifxl:inline w-full bg-red-300 xsm:w-[100%] xsm:mb-10'>
+            <div className='hidden nifxl:inline w-full xsm:w-[100%] xsm:mb-10'>
               <Image
               width={947}
               height={549}
@@ -31,11 +31,12 @@ function ProfitThrough() {
               className='rounded-sm'
               sizes="100%"
               priority/> 
-              </div>
-            <div className='nifxl:hidden w-full '>
+            </div>
+
+            <div className='nifxl:hidden w-full px-10'>
               <Image
-              width={856}
-              height={549}
+              width={650}
+              height={500}
               src={bgImageSM}
               alt="banner logo" 
               className='rounded-sm'

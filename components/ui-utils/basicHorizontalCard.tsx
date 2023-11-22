@@ -13,7 +13,7 @@ type CardProps = {
 }
 function BasicHorizontalCard({title,imageSource,writeUp,comingSoon}:CardProps) {
   return (
-          <div  className="flex flex-row xsm:flex-col max-w-5xl bg-[#13171d99] mx-1 border-0  rounded-md  xsm:mt-5 xsm:w-full xxsm:w-full xxsm:mt-5 ">
+          <div  className="lg:w-full flex flex-row xsm:flex-col max-w-5xl bg-[#13171d99] mx-1 border-0  rounded-md  xsm:mt-5 xsm:w-full xxsm:w-full xxsm:mt-5 ">
 
               <div className="hidden xsm:inline relative h-40 w-[300px] min-w-[180px] sm:min-w-[100px] xxsm:!min-w-[180px]  cursor-pointer  md:min-w-[260px]  ">    
                 <Image 
