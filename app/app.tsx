@@ -25,16 +25,16 @@ function App() {
 
       {/* <LargeScreen /> */}
 
+      <LargeScreen/>
       
-   {/* Medium screen */}
-   <MediumScreen/>
+      {/* Medium screen */}
+      <MediumScreen/>
 
-
+     {/* dynamic page end section */}
     <section className='relative lg:h-[95vh]  '>
-    
-    <div className='relative pl-4  mix-blend-mode: soft-light'>
-    <BackgroundBanner/>
-    </div>
+      <div className='relative pl-4  mix-blend-mode: soft-light'>
+       <BackgroundBanner/>
+       </div>
     </section>
 
     <section className='xsm:mt-[36rem] xxsm:mt-[32rem] xlmd:mt-[32rem] lg:mt-[10rem] xl:mt-4'>
