@@ -12,8 +12,12 @@
 }
 
 @layer components{
-  .headerLink{
+  .headerLinkHorizontal{
     @apply hidden lg:!inline relative cursor-pointer text-sm font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3]
+
+  }
+  .headerLinkVertical{
+    @apply relative p-4 border border-x-0 border-[#13171d]  cursor-pointer text-sm font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3]
 
   }
   .bannerHeading{

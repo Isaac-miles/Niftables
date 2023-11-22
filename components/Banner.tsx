@@ -10,7 +10,7 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 const Banner = () => {
 
     const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
-  console.log(bannerImage)
+
   return (
  
     <div className="flex  flex-col  py-16 md:space-x-4 lg:justify-center items-start md:items-start 2xl:items-center lg:items-center  ">
