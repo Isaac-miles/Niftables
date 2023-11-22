@@ -1,27 +1,23 @@
 'use client'
-
+import {useState} from 'react'
+import { ListStyleFromDataBase } from "@/util/statements";
+import MobileMenu from './ui-utils/mobileMenu';
 import Image from "next/image"
 import { FaBars } from "react-icons/fa6";
 import ListStyle from "./ui-utils/ListStyle"
 import localFont from 'next/font/local'
 const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
-type ListStyle = {
-  id:number
-  name:string
-  live:boolean
-}[]
-
+import { HiOutlineBars3,HiOutlineXMark } from "react-icons/hi2";
 
 const Header = () => {
-    const listStyleFromDataBase:ListStyle = [
-      {id:0,name:'Creon Pass', live:false},
-      {id:1,name:'Token', live:true},
-      {id:2,name:'AI Revenue', live:true},
-      {id:3,name:'AI Launchpad', live:true}
-    ]
 
-    
+  const [toggle, setToggle] = useState(false)
+
+ const setToggleHandler =()=>{
+  setToggle(true)
+ }
+
     const logo = new URL(`/public/img/logo.png`, import.meta.url).href
   
 
@@ -41,14 +37,26 @@ const Header = () => {
 
     <div className="flex items-center space-x-2 text-sm font-light ">
     
-    <ul   className={`${satoshi.className} hidden space-x-20 md:flex lg:mr-20  `}>
-          {listStyleFromDataBase.map((style)=>(
+    <ul   className={`${satoshi.className} hidden space-x-20 md:flex lg:flex lg:mr-20  `}>
+          {ListStyleFromDataBase.map((style)=>(
             <ListStyle key={style.id} title={style.name} comingSoon={style.live}/>
           ))}
     </ul>
-      <button className="w-20 h-7 border px-3 py-0 rounded ">connect</button>
-      <FaBars className=" lg:hidden w-7 h-7 bg-white text-black p-1 rounded" />
+    { !toggle && <button className="w-20 h-7 border px-3 py-0 rounded ">connect</button>}
+    
+      {!toggle && ( <div  className='lg:hidden  m-2 w-[44px]' onClick={()=>{setToggle(true)}}>
+              <button type="button" className='p-1  rounded-sm '>
+              <FaBars className="lg:hidden   w-7 h-7 bg-white text-black p-1 rounded" /></button>
+            </div>)}
     </div>
+
+  
+
+           {toggle && (<div  className='lg:hidden  md:hidden   z-30  w-[44px]'  onClick={()=>{setToggle(false)}}>
+              <button type="button" className='p-1  rounded-sm bg-[#3D8BFF]'>
+                <HiOutlineXMark className='text-4xl  w-7 h-7 p-1 rounded text-white'/></button>
+            </div>)}
+    {toggle && <MobileMenu/>}
     </header>
     
   )

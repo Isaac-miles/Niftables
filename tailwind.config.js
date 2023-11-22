@@ -12,12 +12,12 @@ module.exports = {
     extend: {
       screens: {
         'xlmd': {'max': '1022.67px'},
-        'xsm': {'min': '375px', 'max': '540px'},
+        'xsm': {'min': '375px', 'max': '539px'},
         'xxsm': {'min': '540px', 'max': '767px'},
         'nifx': {'min': '1403.67px', 'max': '1530px'},
         'nifxl': {'min': '1266.67px', 'max': '1536px'},
         'xxxl': {'min': '1537px', 'max': '1920px'},
-        'sxm': {'min': '539px', 'max': '640px'},
+        'sxm': {'min': '540px', 'max': '640px'},
       },
       backgroundImage: {
         'gradient-to-b':

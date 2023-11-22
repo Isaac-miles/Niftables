@@ -1,4 +1,17 @@
 //Note these are mocked data from a database to make most component reusable and dynamic on prod
+type ListStyle = {
+  id:number
+  name:string
+  live:boolean
+}[]
+export const ListStyleFromDataBase:ListStyle = [
+  {id:0,name:'Creon Pass', live:false},
+  {id:1,name:'Token', live:true},
+  {id:2,name:'AI Revenue', live:true},
+  {id:3,name:'AI Launchpad', live:true}
+]
+
+
 interface Statements{
   missionStatement:string
   creonStatement:string
@@ -114,3 +127,10 @@ export const ProfitThroughStatement:{title:string, summary:string} ={
   }
 
 ]
+
+export const BannerTitleFromDb = {
+  TitleForLargeScreen:"The world's first platform for Tokenizing AI blockchain projects",
+  TitleForMediumScreen:"Empowering AI-Crypto Innovations and Integrating AI Tools into crypto.",
+  paragraphForLargeScreen:"Hold the Creon Pass NFT and earn passive income from AI Tools",
+  paragraphForMediumScreen:"Creon «Create On» confidential AI Tools for granting access through NFTs."
+}

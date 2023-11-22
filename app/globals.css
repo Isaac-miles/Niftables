@@ -32,7 +32,7 @@
     @apply grid xsm:grid-cols-1 sxm:grid-cols-2 sm:grid-cols-2 md:grid-cols-2  nifxl:grid-cols-2 lg:grid-cols-2   w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-0 pb-4 bg-black 
   }
   .creonBtn{
-    @apply min-w-[87%] h-[54px]   text-white text-[18px] font-normal rounded not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
+    @apply min-w-[87%] h-[54px] xsm:w-[100%] sxm:w-[100%] text-white text-[18px] font-normal rounded not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
 
   }
 }

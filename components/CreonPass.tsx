@@ -37,13 +37,13 @@ function CreonPass() {
 
         <div className={`${satoshi.className} flex-col w-full p-1 lg:hidden space-y-2`}>
 
-          <div className="border border-[#13171d] px-1 rounded">
+          <div className="border border-[#13171d] px-1 text-white rounded">
             {writeUpsFromDb.missionSubStatementII}
           </div>
 
-          <div className='flex  xsm:flex-col  space-x-1 xsm:space-y-1 '>
-          <div className="flex-initial  px-1  border border-[#13171d] rounded">{writeUpsFromDb.missionSubStatementIII}</div>
-          <div className="flex-initial  px-1 border border-[#13171d] rounded">{writeUpsFromDb.missionSubStatementIv}</div>
+          <div className='flex   space-x-1 xsm:space-y-1  sxm:flex-col '>
+          <div className="flex-initial  px-1  border border-[#13171d] text-white rounded">{writeUpsFromDb.missionSubStatementIII}</div>
+          <div className="flex-initial  px-1 border border-[#13171d] text-white rounded">{writeUpsFromDb.missionSubStatementIv}</div>
           </div>  
         </div>
          
